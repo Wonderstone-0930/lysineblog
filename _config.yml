@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Wonderstone's Blog
+title: Lysine93's Blog
 subtitle: ''
-description: ''
+description: 'OIer & Techlover'
 keywords:
 author: Wonderstone-0930
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://lysineblog.pages.dev
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -54,6 +54,13 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+# Markdown renderer (markdown-it) with KaTeX math support
+markdown:
+  render:
+    html: true
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
